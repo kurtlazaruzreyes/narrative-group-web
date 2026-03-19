@@ -1,571 +1,682 @@
 <template>
-  <section class="hero-section">
-    <div class="hero-content">
-      <div class="hero-overlay"></div>
-      <div class="hero-text">
-        <h1 class="hero-title">Strategic governance: your business, elevated</h1>
-        <p class="hero-subtitle">Many small-to-mid-sized firms outgrow their operational foundation. You need C-Suite HR and strategic oversight without the full-time cost. The Narrative Group provides fractional expertise to bridge the gap between administrative tasks and executive leadership, ensuring your most valuable assets—your people and your entity structure—are protected and optimized. We're the bridge between administrative payroll and executive leadership, designing systems that find, protect, and retain your talent while auditing your entire operational foundation for "Structural Safety" against audits and for fundability by lenders.</p>
+  <div class="page">
+
+    <section class="hero-sec">
+      <div class="reveal">
+        <span class="eyebrow">People Operations & Strategic Governance</span>
       </div>
+      <div class="reveal d1">
+        <h1 class="h1">Strategic governance:<span class="gold-italic">your business, elevated</span></h1>
+      </div>
+      <div class="reveal d2">
+        <p class="body-text">Many small-to-mid-sized firms outgrow their operational foundation. You need C-Suite HR and strategic oversight without the full-time cost. The Narrative Group provides fractional expertise to bridge the gap between administrative tasks and executive leadership, ensuring your most valuable assets—your people and your entity structure—are protected and optimized. We're the bridge between administrative payroll and executive leadership, designing systems that find, protect, and retain your talent while auditing your entire operational foundation for "Structural Safety" against audits and for fundability by lenders.</p>
+      </div>
+      <div class="reveal d3">
+        <button @click="$emit('navigate', 'contact')" class="btn-primary">
+          Learn how we can help
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <div class="orn">
+      <span></span><span class="dia">◆</span><span></span>
     </div>
-  </section>
 
-  <div class="cta-section">
-    <button @click="$emit('navigate', 'contact')" class="cta-button">
-      Learn how we can help
-      <svg class="cta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-      </svg>
-    </button>
-  </div>
-
-  <section class="profiles-section">
-    <div class="section-container">
-      <h2 class="section-title">Who we serve: our perfect client profiles</h2>
-      <p class="section-subtitle">The Narrative Group partners with principals and founders ready to transform their HR and governance from a burden into a strategic asset. Our ideal clients aren't just looking for an "HR person"; they seek an architect of governance who can protect their assets while they focus on their craft. If your business fits one of these "sweet spot" profiles, you're perfectly positioned to get a 10x return on our fractional service.</p>
-      
-      <div class="profiles-list">
-        <div class="profile-item">
-          <div class="profile-header">
+    <section class="section white">
+      <div class="inner">
+        <div class="reveal">
+          <span class="eyebrow">Client Profiles</span>
+          <h2 class="h2">Who we serve: our perfect client profiles</h2>
+          <p class="sec-sub">The Narrative Group partners with principals and founders ready to transform their HR and governance from a burden into a strategic asset. Our ideal clients aren't just looking for an "HR person"; they seek an architect of governance who can protect their assets while they focus on their craft. If your business fits one of these "sweet spot" profiles, you're perfectly positioned to get a 10x return on our fractional service. <span class="hint">— Hover to highlight</span></p>
+        </div>
+        <div class="profiles reveal d1">
+          <div class="profile">
             <div class="profile-icon">
-              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5M9 7h1m-1 4h1m-4 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke-cap="round" stroke-linejoin="round">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5M9 7h1m-1 4h1m-4 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
               </svg>
             </div>
-            <div>
+            <div class="profile-body">
               <h3 class="profile-title">The prestige boutique</h3>
-              <p class="profile-description">Firms built on elite, specialized talent (5–15 employees) like naval architecture, high-end interior design, or boutique law. They seek a governance layer as professional as their craft, worrying that a single compliance mistake will impact their trusted staff. We speak their high-end language, providing peace of mind and strategic benefit narratives using tools like QSEHRA.</p>
+              <p class="profile-desc">Firms built on elite, specialized talent (5–15 employees) like naval architecture, high-end interior design, or boutique law. They seek a governance layer as professional as their craft, worrying that a single compliance mistake will impact their trusted staff. We speak their high-end language, providing peace of mind and strategic benefit narratives using tools like QSEHRA.</p>
             </div>
+            <span class="profile-num">01</span>
           </div>
-        </div>
-
-        <div class="profile-item">
-          <div class="profile-header">
+          <div class="profile">
             <div class="profile-icon">
-              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke-cap="round" stroke-linejoin="round">
+                <path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
               </svg>
             </div>
-            <div>
+            <div class="profile-body">
               <h3 class="profile-title">The multi-entity architect</h3>
-              <p class="profile-description">Serial founders owning a "group" of distinct entities (real estate, financial services, consulting). They need to clean up jumbled HR records across LLCs to stack business credit or prepare for exit. We bridge HR governance and credit architecture, making each entity a bankable asset by ensuring compliant payroll, credit profiles, and strategic narratives.</p>
+              <p class="profile-desc">Serial founders owning a "group" of distinct entities (real estate, financial services, consulting). They need to clean up jumbled HR records across LLCs to stack business credit or prepare for exit. We bridge HR governance and credit architecture, making each entity a bankable asset by ensuring compliant payroll, credit profiles, and strategic narratives.</p>
             </div>
+            <span class="profile-num">02</span>
           </div>
-        </div>
-
-        <div class="profile-item">
-          <div class="profile-header">
+          <div class="profile">
             <div class="profile-icon">
-              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke-cap="round" stroke-linejoin="round">
+                <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
               </svg>
             </div>
-            <div>
+            <div class="profile-body">
               <h3 class="profile-title">The growth-phase startup</h3>
-              <p class="profile-description">Tech or service startups (15–50 employees) in the "danger zone"—too big for DIY HR, too small for a full-time CPO. They face "compliance drift" from rapid scaling and need fractional leadership. We provide a principal strategist for 5-10 hours a month, offering senior executive insights without the senior executive price tag.</p>
+              <p class="profile-desc">Tech or service startups (15–50 employees) in the "danger zone"—too big for DIY HR, too small for a full-time CPO. They face "compliance drift" from rapid scaling and need fractional leadership. We provide a principal strategist for 5-10 hours a month, offering senior executive insights without the senior executive price tag.</p>
             </div>
+            <span class="profile-num">03</span>
+          </div>
+        </div>
+        <div class="reveal d2 cta-center">
+          <button @click="$emit('navigate', 'contact')" class="btn-primary">
+            Find your fit: request a consultation
+            <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="orn cream">
+      <span></span><span class="dia">◆</span><span></span>
+    </div>
+
+    <section class="section cream">
+      <div class="inner">
+        <div class="reveal">
+          <span class="eyebrow">Compliance & Governance</span>
+          <h2 class="h2">Compliance isn't a task, it's your company's bedrock value</h2>
+          <p class="sec-sub">Many businesses manage with software; elite businesses govern with a strategist. We take the "governance burden" off of principal's desk so they can return to being a founder. We transform back-office compliance into a professional, scalable narrative that impresses employees and investors alike. Discover how to move from 'I think we're okay' to 'I know we're secure'. <span class="hint">— Hover cards</span></p>
+        </div>
+        <div class="comp-grid reveal d1">
+          <div class="comp-card">
+            <h3 class="comp-title">Professional Governance</h3>
+            <p class="comp-desc">Our strategic oversight ensures your business operates with the same level of professionalism as your craft, protecting your assets and ensuring peace of mind.</p>
+            <ul class="comp-list">
+              <li class="comp-item"><span class="cdot">◆</span>Compliance audits and risk assessment</li>
+              <li class="comp-item"><span class="cdot">◆</span>Strategic HR architecture design</li>
+              <li class="comp-item"><span class="cdot">◆</span>Talent retention and optimization</li>
+            </ul>
+          </div>
+          <div class="comp-card">
+            <h3 class="comp-title">Executive-Level Strategy</h3>
+            <p class="comp-desc">We provide strategic thinking and oversight that software alone cannot deliver, ensuring your business stays ahead of regulatory changes and compliance requirements.</p>
+            <ul class="comp-list">
+              <li class="comp-item"><span class="cdot">◆</span>Proactive regulatory monitoring</li>
+              <li class="comp-item"><span class="cdot">◆</span>Strategic risk management</li>
+              <li class="comp-item"><span class="cdot">◆</span>Executive-level insights without C-suite cost</li>
+            </ul>
           </div>
         </div>
       </div>
-      
-      <div class="mt-8">
-        <button @click="$emit('navigate', 'contact')" class="cta-button">
-          Find your fit: request a consultation
-          <svg class="cta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
+    </section>
+
+    <div class="orn">
+      <span></span><span class="dia">◆</span><span></span>
+    </div>
+
+    <section class="section white">
+      <div class="inner">
+        <div class="reveal">
+          <span class="eyebrow">Our Competitive Advantage</span>
+          <h2 class="h2">Integrating HR & capital for fundability</h2>
+          <p class="sec-sub">This is our most significant competitive advantage. Traditional HR consultants don't understand business credit, and credit strategists don't understand labor law. We bridge this gap. We ensure your HR records and corporate governance are so impeccably "clean" that they actively enhance your fundability. For multi-entity groups, we architect structures where each LLC becomes a stand-alone, bankable asset, helping you scale credit and protect your growth simultaneously. This resolves "multi-entity complexity & fundability" challenges and prevents "piercing the corporate veil."</p>
+        </div>
+        <div class="final-card reveal d1">
+          <h3 class="final-title">Build a Bankable Future</h3>
+          <p class="final-sub">Transform your business into an asset that attracts capital and scales efficiently</p>
+        </div>
+        <div class="reveal d2 cta-center">
+          <button @click="$emit('navigate', 'contact')" class="btn-primary">
+            Discover our clean slate methodology
+            <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <div class="reveal-left">
+        <span class="eyebrow gold-eye">Book a Consultation</span>
+        <h2 class="cta-title">Ready to elevate your business?</h2>
+        <p class="cta-sub">Let's talk about how fractional HR leadership can transform your organization.</p>
+      </div>
+      <div class="reveal-right">
+        <button @click="$emit('navigate', 'contact')" class="btn-primary">
+          Get Started Today
         </button>
       </div>
     </div>
-  </section>
 
-  <section class="compliance-section">
-    <div class="section-container">
-      <h2 class="section-title">Compliance isn't a task, it's your company's bedrock value</h2>
-      <p class="section-subtitle">Many businesses manage with software; elite businesses govern with a strategist. We take the "governance burden" off of principal's desk so they can return to being a founder. We transform back-office compliance into a professional, scalable narrative that impresses employees and investors alike. Discover how to move from 'I think we're okay' to 'I know we're secure'.</p>
-      
-      <!-- Image section for compliance -->
-      <div class="compliance-grid">
-        <div>
-          <h3 class="compliance-title">Professional Governance</h3>
-          <p class="compliance-description">Our strategic oversight ensures your business operates with the same level of professionalism as your craft, protecting your assets and ensuring peace of mind.</p>
-          <ul class="compliance-list">
-            <li class="compliance-item">
-              <div class="compliance-bullet"></div>
-              <span class="compliance-text">Compliance audits and risk assessment</span>
-            </li>
-            <li class="compliance-item">
-              <div class="compliance-bullet"></div>
-              <span class="compliance-text">Strategic HR architecture design</span>
-            </li>
-            <li class="compliance-item">
-              <div class="compliance-bullet"></div>
-              <span class="compliance-text">Talent retention and optimization</span>
-            </li>
-          </ul>
-        </div>
-        <div class="compliance-image">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Professional governance and compliance" class="compliance-img">
-          <div class="compliance-overlay"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="oversight-section">
-      <div class="oversight-grid">
-        <div class="oversight-image">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Strategic oversight and executive leadership" class="oversight-img">
-          <div class="oversight-overlay"></div>
-        </div>
-        <div>
-          <h3 class="oversight-title">Executive-Level Strategy</h3>
-          <p class="oversight-description">We provide strategic thinking and oversight that software alone cannot deliver, ensuring your business stays ahead of regulatory changes and compliance requirements.</p>
-          <ul class="oversight-list">
-            <li class="oversight-item">
-              <div class="oversight-bullet"></div>
-              <span class="oversight-text">Proactive regulatory monitoring</span>
-            </li>
-            <li class="oversight-item">
-              <div class="oversight-bullet"></div>
-              <span class="oversight-text">Strategic risk management</span>
-            </li>
-            <li class="oversight-item">
-              <div class="oversight-bullet"></div>
-              <span class="oversight-text">Executive-level insights without C-suite cost</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="integration-section">
-    <div class="section-container">
-      <h2 class="section-title">Integrating HR & capital for fundability</h2>
-      <p class="section-subtitle">This is our most significant competitive advantage. Traditional HR consultants don't understand business credit, and credit strategists don't understand labor law. We bridge this gap. We ensure your HR records and corporate governance are so impeccably "clean" that they actively enhance your fundability. For multi-entity groups, we architect structures where each LLC becomes a stand-alone, bankable asset, helping you scale credit and protect your growth simultaneously. This resolves "multi-entity complexity & fundability" challenges and prevents "piercing the corporate veil."</p>
-      
-      <!-- Final image section -->
-      <div class="final-section">
-        <div class="final-image">
-          <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Business growth and fundability" class="final-img">
-          <div class="final-overlay">
-            <h3 class="final-title">Build a Bankable Future</h3>
-            <p class="final-subtitle">Transform your business into an asset that attracts capital and scales efficiently</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-8 text-center">
-        <button @click="$emit('navigate', 'contact')" class="cta-button">
-          Discover our clean slate methodology
-          <svg class="cta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+
+defineEmits(['navigate'])
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in')
+          observer.unobserve(e.target)
+        }
+      })
+    },
+    { threshold: 0.12 }
+  )
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach((el) => {
+    observer.observe(el)
+  })
+})
 </script>
 
-<style lang="css" scoped>
-/* Hero Section */
-.hero-section {
-  margin-bottom: 4rem;
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap');
+
+.page {
+  --gold: #C9A84C;
+  --gold-l: #E8C97A;
+  --gold-d: #9A7A2E;
+  --gold-bg: rgba(201, 168, 76, 0.07);
+  --gold-bd: rgba(201, 168, 76, 0.28);
+  --ink: #1C1C1C;
+  --ink2: #464646;
+  --ink3: #888888;
+  --white: #ffffff;
+  --off: #FAFAF8;
+  --cream: #F4F2ED;
+  --bd: rgba(0, 0, 0, 0.09);
+  background: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--ink);
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.hero-content {
-  background: linear-gradient(to bottom right, rgb(30 41 59), rgb(55 65 81), rgb(63 63 63));
-  border-radius: 1.5rem;
-  padding: 3rem 4rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-26px);
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal-left.in {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(26px);
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal-right.in {
+  opacity: 1;
+  transform: translateX(0);
+}
+.d1 { transition-delay: 0.12s; }
+.d2 { transition-delay: 0.22s; }
+.d3 { transition-delay: 0.32s; }
+
+/* HERO */
+.hero-sec {
+  padding: 3rem 2rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--bd);
+}
+.eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1.2rem;
+}
+.gold-eye {
+  color: var(--gold);
+}
+.h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 1.35rem;
+  transition: text-shadow 0.3s ease, filter 0.3s ease;
+}
+.h1:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
+               0 0 8px rgba(201, 168, 76, 0.25);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2))
+          blur(0.5px);
+}
+.gold-italic {
+  display: block;
+  font-style: italic;
+  background: linear-gradient(135deg, var(--gold-l), var(--gold), var(--gold-d));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.4;
+  font-weight: 700;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
   position: relative;
-  overflow: hidden;
-  margin-bottom: 3rem;
+  transition: filter 0.3s ease;
 }
-
-@media (min-width: 768px) {
-  .hero-content {
-    padding: 4rem;
-  }
+.gold-italic:hover {
+  filter: drop-shadow(0.5px 0.5px 1px rgba(0, 0, 0, 0.1))
+          drop-shadow(0 0 6px rgba(201, 168, 76, 0.15))
+          blur(0.3px);
 }
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), transparent);
-}
-
-.hero-text {
-  position: relative;
-  z-index: 10;
-}
-
-.hero-title {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 800;
-  color: rgb(255 255 255);
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-title {
-    font-size: 3.75rem;
-    line-height: 1.2;
-  }
-}
-
-.hero-subtitle {
+.body-text {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: rgb(241 245 249);
-  max-width: 48rem;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--ink2);
+  max-width: 660px;
+  margin-bottom: 2.2rem;
 }
 
-@media (min-width: 768px) {
-  .hero-subtitle {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-/* CTA Section */
-.cta-section {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.cta-button {
+/* BUTTON */
+.btn-primary {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, var(--gold-l), var(--gold), var(--gold-d));
+  color: #fff;
+  border: none;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(to right, rgb(30 41 59), rgb(55 65 81));
-  color: rgb(255 255 255);
-  padding: 1rem 2rem;
-  border-radius: 0.75rem;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  gap: 0.5rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.18s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(201, 168, 76, 0.35);
+}
+.btn-primary:active {
+  transform: scale(0.97) translateY(0);
+  box-shadow: none;
+}
+.btn-primary:active::after {
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.cta-button:hover {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  transform: translateY(-0.25rem);
+/* DIVIDER */
+.orn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.75rem 2rem;
+  background: var(--off);
+}
+.orn.cream {
+  background: var(--white);
+}
+.orn span:first-child,
+.orn span:last-child {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-bd) 50%, var(--gold-d));
+}
+.orn span:last-child {
+  transform: scaleX(-1);
+}
+.dia {
+  color: var(--gold);
+  font-size: 0.44rem;
+  flex-shrink: 0;
 }
 
-.cta-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-left: 0.5rem;
+/* SECTIONS */
+.section {
+  padding: 3rem 2rem;
 }
-
-/* Section Container */
-.section-container {
-  background: rgb(255 255 255);
-  border-radius: 1.5rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  padding: 2rem 3rem;
-  border: 1px solid rgb(243 244 246);
-  margin-bottom: 3rem;
+.section.white {
+  background: var(--white);
 }
-
-@media (min-width: 768px) {
-  .section-container {
-    padding: 3rem 4rem;
-  }
+.section.cream {
+  background: var(--cream);
 }
-
-.section-title {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  background: linear-gradient(to right, rgb(17 24 39), rgb(55 65 81));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.7rem;
+}
+.sec-sub {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--ink2);
+  line-height: 1.75;
+  max-width: 720px;
   margin-bottom: 2rem;
 }
-
-@media (min-width: 768px) {
-  .section-title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
+.hint {
+  color: var(--gold-d);
+  font-size: 0.95rem;
+}
+.cta-center {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.section-subtitle {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  color: rgb(75 85 99);
-  margin-bottom: 3rem;
-}
-
-/* Profiles Section */
-.profiles-list {
+/* PROFILES */
+.profiles {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1px;
+  background: var(--bd);
 }
-
-.profile-item {
-  background: linear-gradient(to bottom right, rgb(248 250 252), rgb(229 231 235));
-  border-radius: 1rem;
-  padding: 2rem;
-  border-left: 4px solid rgb(30 41 59);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.profile-item:hover {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-.profile-header {
+.profile {
+  background: var(--white);
+  padding: 1.75rem;
   display: flex;
   align-items: flex-start;
+  gap: 1.35rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.25s;
 }
-
+.profile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--gold-d), var(--gold-l));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.profile::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold-d), var(--gold-l), var(--gold-d));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s 0.05s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.profile:hover {
+  background: var(--off);
+}
+.profile:hover::before,
+.profile:hover::after {
+  transform: scale(1);
+}
+.profile:active {
+  transform: scale(0.998);
+}
 .profile-icon {
-  width: 4rem;
-  height: 4rem;
-  background: linear-gradient(to bottom right, rgb(30 41 59), rgb(55 65 81));
-  border-radius: 0.75rem;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--gold-bd);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  margin-right: 1.5rem;
+  color: var(--gold);
   flex-shrink: 0;
+  transition: background 0.25s, transform 0.2s;
 }
-
-.icon {
-  width: 2rem;
-  height: 2rem;
-  color: rgb(255 255 255);
+.profile:hover .profile-icon {
+  background: var(--gold-bg);
+  transform: scale(1.08);
 }
-
+.profile-body {
+  flex: 1;
+}
 .profile-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-  color: rgb(17 24 39);
-  margin-bottom: 0.75rem;
-}
-
-.profile-description {
-  color: rgb(75 85 99);
-  line-height: 1.625;
-}
-
-/* Compliance Section */
-.compliance-grid {
-  display: grid;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .compliance-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.compliance-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-  color: rgb(17 24 39);
-  margin-bottom: 1rem;
-}
-
-.compliance-description {
-  color: rgb(75 85 99);
-  line-height: 1.625;
-  margin-bottom: 1.5rem;
-}
-
-.compliance-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.compliance-item {
-  display: flex;
-  align-items: flex-start;
-}
-
-.compliance-bullet {
-  width: 0.5rem;
-  height: 0.5rem;
-  background: rgb(30 41 59);
-  border-radius: 50%;
-  margin-right: 0.75rem;
-  flex-shrink: 0;
-  margin-top: 0.5rem;
-}
-
-.compliance-text {
-  color: rgb(75 85 99);
-}
-
-/* Oversight Section */
-.oversight-grid {
-  display: grid;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .oversight-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.oversight-image {
-  position: relative;
-  order: 2;
-}
-
-.oversight-img {
-  border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 16rem;
-  object-fit: cover;
-}
-
-.oversight-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(17 24 39, 0.2), transparent);
-  border-radius: 1rem;
-}
-
-.oversight-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-  color: rgb(17 24 39);
-  margin-bottom: 1rem;
-}
-
-.oversight-description {
-  color: rgb(75 85 99);
-  line-height: 1.625;
-  margin-bottom: 1.5rem;
-}
-
-.oversight-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.oversight-item {
-  display: flex;
-  align-items: flex-start;
-}
-
-.oversight-bullet {
-  width: 0.5rem;
-  height: 0.5rem;
-  background: rgb(55 65 81);
-  border-radius: 50%;
-  margin-right: 0.75rem;
-  flex-shrink: 0;
-  margin-top: 0.5rem;
-}
-
-.oversight-text {
-  color: rgb(75 85 99);
-}
-
-/* Integration Section */
-.integration-section {
-  margin-bottom: 4rem;
-}
-
-.final-section {
-  position: relative;
-}
-
-.final-image {
-  position: relative;
-  border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
-}
-
-.final-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(17 24 39, 0.4), transparent);
-  border-radius: 1rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.final-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-  color: rgb(255 255 255);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ink2);
   margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  transition: color 0.25s;
+}
+.profile:hover .profile-title {
+  color: var(--ink);
+}
+.profile-desc {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: var(--ink2);
+  line-height: 1.7;
+}
+.profile-num {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(201, 168, 76, 0.15);
+  position: absolute;
+  right: 1.25rem;
+  top: 1.1rem;
+  transition: color 0.25s, transform 0.25s;
+  line-height: 1;
+}
+.profile:hover .profile-num {
+  color: rgba(201, 168, 76, 0.4);
+  transform: scale(1.15);
 }
 
-.final-subtitle {
-  color: rgb(241 245 249);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+/* COMPLIANCE */
+.comp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
 }
-
-/* Compliance Image */
-.compliance-image {
+.comp-card {
+  background: var(--white);
+  border: 1px solid var(--bd);
+  padding: 2rem;
   position: relative;
+  overflow: hidden;
+  transition: background 0.25s, transform 0.22s, box-shadow 0.25s;
 }
-
-.compliance-img {
-  border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 16rem;
-  object-fit: cover;
-}
-
-.compliance-overlay {
+.comp-card::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(17 24 39, 0.2), transparent);
-  border-radius: 1rem;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold-d), var(--gold-l), var(--gold-d));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comp-card:hover {
+  background: var(--off);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(201, 168, 76, 0.1);
+  border-color: var(--gold-bd);
+}
+.comp-card:hover::before {
+  transform: scaleX(1);
+}
+.comp-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.55rem;
+}
+.comp-desc {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: var(--ink2);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.comp-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.comp-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: var(--ink2);
+  transition: transform 0.2s, color 0.2s;
+}
+.comp-item:hover {
+  transform: translateX(3px);
+  color: var(--ink);
+}
+.cdot {
+  color: var(--gold);
+  font-size: 0.36rem;
+  margin-top: 0.44rem;
+  flex-shrink: 0;
+}
+
+/* FINAL CARD */
+.final-card {
+  background: var(--ink);
+  padding: 2.5rem;
+  margin: 1.25rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.final-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold-d), var(--gold-l), var(--gold-d));
+}
+.final-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.2);
+}
+.final-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.55rem;
+}
+.final-sub {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.65;
+}
+
+/* CTA BAND */
+.cta-band {
+  background: var(--ink);
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0.35rem 0 0.55rem 0;
+}
+.cta-sub {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.65;
+}
+
+/* RESPONSIVE */
+@media (max-width: 960px) {
+  .hero-sec {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .orn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cta-band {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .comp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 961px) {
+  .hero-sec {
+    padding: 3rem 4rem 2rem 4rem;
+  }
+  .section {
+    padding: 3rem 4rem;
+  }
+  .orn {
+    padding: 1.75rem 4rem;
+  }
+  .cta-band {
+    padding: 3rem 4rem;
+  }
 }
 </style>
