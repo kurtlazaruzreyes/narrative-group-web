@@ -1,51 +1,65 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomePage from '../pages/HeroSection.vue'
+import AboutPage from '../pages/AboutPage.vue'
+import ServicesPage from '../pages/ServicesPage.vue'
+import ContactPage from '../pages/ContactPage.vue'
+import FootballIntelligenceSection from '../pages/FootballIntelligenceSection.vue'
+import FractionalHRSection from '../pages/FractionalHRSection.vue'
+import HoopsIntelligenceSection from '../pages/HoopsIntelligenceSection.vue'
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  history: createWebHistory(),
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to top when navigating to a new page
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0, left: 0 }
+    }
+  },
   routes: [
     {
       path: '/',
       name: 'home',
-      component: () => import('../components/HomeSection.vue'),
+      component: () => import('../components/HomePage.vue'),
       meta: { title: 'Home' }
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('../components/AboutSection.vue'),
+      component: () => import('../pages/AboutPage.vue'),
       meta: { title: 'About' }
     },
     {
       path: '/services',
       name: 'services',
-      component: () => import('../components/ServicesSection.vue'),
+      component: () => import('../pages/ServicesPage.vue'),
       meta: { title: 'Services' }
     },
     {
-      path: '/football',
-      name: 'football',
-      component: () => import('../components/FootballIntelligenceSection.vue'),
+      path: '/football-intelligence',
+      name: 'football-intelligence',
+      component: () => import('../pages/FootballIntelligenceSection.vue'),
       meta: { title: 'Football Intelligence' }
     },
     {
-      path: '/hr',
-      name: 'hr',
-      component: () => import('../components/FractionalHRSection.vue'),
-      meta: { title: 'Fractional HR' }
+      path: '/fractional-hr',
+      name: 'fractional-hr',
+      component: () => import('../pages/FractionalHRSection.vue'),
+      meta: { title: 'Fractional HR Strategic Governance' }
     },
     {
-      path: '/hoops',
-      name: 'hoops',
-      component: () => import('../components/HoopsIntelligenceSection.vue'),
+      path: '/hoops-intelligence',
+      name: 'hoops-intelligence',
+      component: () => import('../pages/HoopsIntelligenceSection.vue'),
       meta: { title: 'Hoops Intelligence' }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('../components/ContactSection.vue'),
+      component: () => import('../pages/ContactPage.vue'),
       meta: { title: 'Contact' }
     },
-    // 404 Not Found - catch all
     {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
@@ -54,7 +68,6 @@ const router = createRouter({
   ],
 })
 
-// Set document.title dynamically on every navigation
 router.afterEach((to) => {
   const appName = 'The Narrative Group'
   const pageTitle = to.meta.title as string | undefined
