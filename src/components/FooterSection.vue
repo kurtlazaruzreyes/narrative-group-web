@@ -3,7 +3,7 @@
     <div class="flex flex-col lg:flex-row justify-between items-center mb-20 gap-8">
       
       <div class="flex items-center gap-4 order-2 lg:order-1">
-        <span class="text-[0.7rem] text-white/70 tracking-tight">All rights reserved.</span>
+        <span class="text-[0.7rem] text-white/70 tracking-tight">© 2026 The Narrative Group</span>
       </div>
 
       <nav class="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 text-[0.75rem] md:text-[0.8rem] font-medium tracking-wide order-1 lg:order-2 max-w-full">
@@ -26,10 +26,10 @@
 
     <div class="relative flex justify-center">
       <h2 class="text-[8vw] md:text-[9vw] font-medium tracking-tighter leading-[0.8] mb-[-2vw] select-none">
-        <span class="block text-center"> <span class="text-gold">The Narrative Group</span></span>
+        <span class="block text-center"> <span class="text-[#C9A84C]">The Narrative Group</span></span>
         
         <span class="absolute left-0 top-full w-full block scale-y-[-1] opacity-20 bg-gradient-to-b from-white to-transparent bg-clip-text text-transparent pointer-events-none">
-          <span class="text-gold">The Narrative Group</span>
+          <span class="text-[#C9A84C]">The Narrative Group</span>
         </span>
       </h2>
     </div>

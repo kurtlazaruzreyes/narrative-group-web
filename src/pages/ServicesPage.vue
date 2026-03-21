@@ -1,26 +1,27 @@
 <template>
   <div class="min-h-screen bg-[#F5F3F0] text-[#1A1A1A] selection:bg-[#C9A96E] selection:text-white">
     <div class="fixed inset-0 pointer-events-none opacity-[0.02] z-50 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+    
     <Navigation />
 
-    <header class="relative min-h-[90vh] flex items-center pt-20 pb-20 px-6">
+    <header class="relative min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] flex items-center pt-16 pb-12 md:pt-20 md:pb-20 px-4 md:px-6 site-animate">
       <div class="max-w-7xl mx-auto w-full">
         <div class="reveal-up">
            <span class="inline-block py-1 px-4 border border-[#C9A96E]/30 rounded-full text-[10px] uppercase tracking-[0.3em] mb-8 text-[#C9A96E] font-bold">
              Our Services
            </span>
-           <h1 class="font-playfair text-6xl md:text-9xl font-black leading-[0.85] max-w-5xl mb-12 tracking-tighter">
-            Crafting Your <br/>
+           <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.85] md:leading-[0.9] max-w-4xl md:max-w-5xl mb-8 md:mb-12 tracking-tighter">
+            Crafting Your <br class="hidden md:block"/>
             <span class="text-[#C9A96E] italic hover:tracking-normal transition-all duration-700 cursor-default">Story</span>
           </h1>
         </div>
         
-        <div class="flex flex-wrap items-center gap-8 border-t border-black/10 pt-10 reveal-up delay-300">
-          <p class="text-[11px] text-muted max-w-xs uppercase tracking-[0.25em] leading-relaxed opacity-70">
+        <div class="flex flex-wrap items-center gap-4 md:gap-8 border-t border-black/10 pt-6 md:pt-10 reveal-up delay-300 site-animate site-animate-delay-200">
+          <p class="text-[10px] md:text-[11px] text-[#666666] max-w-xs md:max-w-sm uppercase tracking-[0.25em] leading-relaxed opacity-70">
             Strategic frameworks for those <br/>who demand narrative excellence.
           </p>
           <div class="h-[1px] flex-grow bg-gradient-to-r from-black/20 to-transparent"></div>
-          <button @click="scrollToServices" class="group flex items-center gap-3 bg-[#C9A96E] text-white px-8 py-4 font-playfair text-xs tracking-wider3 uppercase hover:bg-[#C9A96E]/90 transition-all duration-300">
+          <button @click="scrollToServices" class="group flex items-center gap-3 bg-[#C9A96E] text-black px-8 py-4 font-playfair text-xs tracking-wider3 rounded-full uppercase hover:bg-[#C9A96E]/90 transition-all duration-300">
             Explore Services
             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </button>
@@ -28,19 +29,23 @@
       </div>
     </header>
 
-    <main id="scroll-container">
+    <div class="orn">
+      <span></span><span class="dia">◆</span><span></span>
+    </div>
+
+    <main id="scroll-container" class="site-animate site-animate-delay-300">
       <section id="services" class="py-32 px-6 max-w-7xl mx-auto border-t border-black/5">
       <div class="grid lg:grid-cols-12 gap-16">
         
         <div class="lg:col-span-4 lg:sticky lg:top-40 h-fit reveal-up">
-          <h3 class="text-xl mb-10 italic text-[#C9A96E] font-playfair">Measuring Success: Tangible Results</h3>
+          <h3 class="text-4xl font-extrabold mb-10 italic text-[#C9A96E] font-playfair">Our Services</h3>
           <ul class="space-y-6">
             <li v-for="(pillar, i) in pillars" :key="i" 
                 @click="scrollTo(i)"
                 class="flex items-start gap-4 cursor-pointer group transition-all duration-500">
               <div class="w-2 h-2 mt-1.5 transition-all duration-500"
                    :class="activePillar === i ? 'bg-[#C9A96E] scale-125 rotate-45' : 'bg-black/10 group-hover:bg-[#C9A96E]/40'"></div>
-              <span :class="activePillar === i ? 'text-[#C9A96E] translate-x-2' : 'text-muted'" 
+              <span :class="activePillar === i ? 'text-[#C9A96E] translate-x-2' : 'text-[#666666]'" 
                     class="text-base font-light leading-relaxed transition-all duration-500">
                 {{ pillar.title }}
               </span>
@@ -60,14 +65,14 @@
               </h2>
             </div>
 
-            <p class="text-muted text-xl leading-relaxed mb-8 font-light max-w-2xl">
+            <p class="text-[#666666] text-xl leading-relaxed mb-8 font-light max-w-2xl">
               {{ pillar.longDesc }}
             </p>
 
             <ul v-if="pillar.bullets" class="space-y-4 mb-16 max-w-2xl">
               <li v-for="(bullet, index) in pillar.bullets" :key="index" class="flex items-start gap-3">
                 <div :class="activePillar === i ? 'bg-black scale-125' : 'bg-[#C9A96E] hover:bg-black hover:scale-125'" class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 transition-all duration-300 cursor-pointer"></div>
-                <span :class="activePillar === i ? 'text-[#C9A96E]' : 'text-muted hover:text-[#C9A96E]'" class="text-lg leading-relaxed font-light transition-colors duration-300 cursor-pointer">{{ bullet }}</span>
+                <span :class="activePillar === i ? 'text-[#C9A96E]' : 'text-[#666666] hover:text-[#C9A96E]'" class="text-lg leading-relaxed font-light transition-colors duration-300 cursor-pointer">{{ bullet }}</span>
               </li>
             </ul>
 
@@ -76,13 +81,17 @@
       </div>
     </section>
 
+    <div class="orn">
+      <span></span><span class="dia">◆</span><span></span>
+    </div>
+
     <section class="px-6 md:px-12 py-24 bg-[#F9F7F2]">
       <div class="max-w-7xl mx-auto">
         <div class="mb-24 text-center md:text-left">
-          <p class="font-serif text-sm tracking-[0.3em] uppercase text-gold mb-6 font-semibold">
+          <p class="font-serif text-sm tracking-[0.3em] uppercase text-[#C9A84C] mb-6 font-semibold">
             Specializations
           </p>
-          <h2 class="font-serif text-5xl md:text-7xl lg:text-8xl uppercase tracking-tighter leading-none text-ink">
+          <h2 class="font-serif text-5xl md:text-7xl lg:text-8xl uppercase tracking-tighter leading-none text-[#1C1C1C]">
             Beyond <br class="hidden md:block" /> The Brief
           </h2>
         </div>
@@ -93,23 +102,23 @@
             :key="i"
             class="group flex flex-col space-y-8"
           >
-            <div class="relative aspect-square md:aspect-[16/10] overflow-hidden bg-ink">
+            <div class="relative aspect-square md:aspect-[16/10] overflow-hidden bg-[#1C1C1C]">
               <img 
                 :src="spec.img" 
                 :alt="spec.title" 
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" 
               />
               <div class="absolute top-6 left-6">
-                <span class="text-6xl font-serif italic text-gold/80 opacity-50">{{ String(i + 1).padStart(2, '0') }}</span>
+                <span class="text-6xl font-serif italic text-[#C9A84C]/80 opacity-50">{{ String(i + 1).padStart(2, '0') }}</span>
               </div>
             </div>
 
             <div class="max-w-xl">
-              <h3 class="font-serif text-3xl md:text-4xl uppercase tracking-tight text-ink mb-4">
+              <h3 class="font-serif text-3xl md:text-4xl uppercase tracking-tight text-[#1C1C1C] mb-4">
                 {{ spec.title }}
               </h3>
-              <div class="h-1 w-12 bg-gold mb-6 transition-all duration-500 group-hover:w-24"></div>
-              <p class="text-ink/80 text-lg md:text-xl leading-relaxed font-light">
+              <div class="h-1 w-12 bg-[#C9A84C] mb-6 transition-all duration-500 group-hover:w-24"></div>
+              <p class="text-[#1C1C1C]/80 text-lg md:text-xl leading-relaxed font-light">
                 {{ spec.desc }}
               </p>
             </div>
@@ -117,6 +126,10 @@
         </div>
       </div>
     </section>
+
+    <div class="orn">
+      <span></span><span class="dia">◆</span><span></span>
+    </div>
 
     <section class="px-8 md:px-20 py-32 bg-white">
       <div class="max-w-7xl mx-auto">
@@ -128,13 +141,9 @@
               From Chaos<br/>
               <span class="text-transparent" style="-webkit-text-stroke: 1px #1A1A1A;">To Clarity</span>
             </h2>
-            <p class="text-muted text-lg leading-relaxed max-w-sm mb-10 font-light">
+            <p class="text-[#666666] text-lg leading-relaxed max-w-sm mb-10 font-light">
               Every client starts in a different place. Our process is designed to move you from narrative chaos to complete story control.
             </p>
-            <button class="group flex items-center gap-3 border border-[#C9A96E]/40 text-[#C9A96E] px-8 py-4 font-playfair text-xs tracking-widest uppercase hover:bg-[#C9A96E] hover:text-white transition-all duration-500">
-              Get a Quote
-              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </button>
           </div>
 
           <div class="relative pt-10">
@@ -161,7 +170,7 @@
 
               <span class="font-playfair text-[10px] tracking-[0.2em] uppercase text-[#C9A96E] block mb-4">Phase {{ i + 1 }}</span>
               <h3 class="font-playfair text-2xl md:text-3xl uppercase tracking-tight mb-4 text-[#1A1A1A]">{{ step.title }}</h3>
-              <p class="text-muted text-base md:text-lg leading-relaxed font-light max-w-md">{{ step.desc }}</p>
+              <p class="text-[#666666] text-base md:text-lg leading-relaxed font-light max-w-md">{{ step.desc }}</p>
             </div>
           </div>
         </div>
@@ -484,7 +493,7 @@ body {
   background: #0A0A0A;
 }
 
-.font-display { font-family: 'Playfair Display', serif; }
+.font-playfair { font-family: 'Playfair Display', serif; }
 .font-body    { font-family: 'DM Sans', sans-serif; }
 
 .text-stroke {
@@ -498,6 +507,32 @@ body {
 }
 .animate-fadeUp {
   animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ORNAMENTAL DIVIDER */
+.orn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.75rem 5rem;
+  background: transparent;
+}
+.orn.cream {
+  background: transparent;
+}
+.orn span:first-child,
+.orn span:last-child {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201, 168, 76, 0.28) 50%, #9A7A2E);
+}
+.orn span:last-child {
+  transform: scaleX(-1);
+}
+.dia {
+  color: #C9A96E;
+  font-size: 0.44rem;
+  flex-shrink: 0;
 }
 
 .perspective-1000 {

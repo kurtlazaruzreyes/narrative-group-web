@@ -54,9 +54,9 @@ withDefaults(defineProps<Props>(), {
       <div class="flex justify-center">
         <a href="/contact" class="inline-block">
           <button
-            class="px-7 py-3 bg-[#1a1a1a] text-white text-sm font-medium rounded-lg 
+            class="px-7 py-3 bg-[#C9A96E] text-black text-sm font-medium rounded-lg 
                    shadow-[0_20px_40px_rgba(0,0,0,0.3)] 
-                   hover:bg-black transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
+                   hover:bg-[#C9A96E]/90 transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
           >
             {{ buttonText }}
           </button>
@@ -68,10 +68,10 @@ withDefaults(defineProps<Props>(), {
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 
-h2 {
-  font-family: 'Source Serif 4', serif;
+h2, button {
+  font-family: 'Playfair Display', serif;
 }
 
 svg {
