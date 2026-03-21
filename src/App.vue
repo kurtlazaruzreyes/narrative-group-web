@@ -1,98 +1,16 @@
 <template>
-  <div class="app-container">
-    <nav class="nav-container">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center space-x-4">
-            <div class="nav-logo">
-              <img src="/ng-logo-only-gold.png" alt="The Narrative Group" class="footer-logo">
-            </div>
-            <span class="nav-brand">The Narrative Group</span>
-          </div>
-          <div class="nav-tabs">
-            <router-link
-              v-for="tab in tabs"
-              :key="tab.id"
-              :to="tab.path"
-              custom
-              v-slot="{ navigate, isActive }"
-            >
-              <button
-                @click="navigate"
-                :class="[
-                  'nav-tab',
-                  isActive ? 'nav-tab-active' : 'nav-tab-inactive'
-                ]"
-              >
-                {{ tab.label }}
-              </button>
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <main id="main-content" class="main-content">
-      <transition name="fade" mode="out-in">
-        <router-view />
-      </transition>
-    </main>
-
-    <footer class="footer">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <div class="flex items-center space-x-3 mb-4">
-              <img src="/ng-logo-only-gold.png" alt="The Narrative Group" class="footer-logo">
-              <h3 class="footer-brand">The Narrative Group</h3>
-            </div>
-            <p class="text-gray-400">Crafting narratives that build brands, connect communities, and move people.</p>
-          </div>
-          <div>
-            <h3 class="footer-section-title">Our Services</h3>
-            <ul class="space-y-2 text-gray-400">
-              <li><router-link to="/services" class="footer-link">Storytelling Strategy</router-link></li>
-              <li><router-link to="/services" class="footer-link">Media Relations</router-link></li>
-              <li><router-link to="/services" class="footer-link">Digital Branding</router-link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="footer-section-title">Connect</h3>
-            <div class="flex flex-col space-y-4">
-              <a href="mailto:info@narrativegroup.com" class="social-link">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                <span class="social-text">Email: info@narrativegroup.com</span>
-              </a>
-              <a href="tel:+1702-969-4220" class="social-link">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                </svg>
-                <span class="social-text">Phone: +1 (702) 969-4220</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>&copy; 2026-2027 The Narrative Group. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
 <script setup lang="ts">
-const tabs = [
-  { id: 'home', label: 'Home', path: '/' },
-  { id: 'about', label: 'About Us', path: '/about' },
-  { id: 'services', label: 'Our Services', path: '/services' },
-  { id: 'football', label: 'Football Intelligence', path: '/football' },
-  { id: 'hr', label: 'Fractional HR', path: '/hr' },
-  { id: 'hoops', label: 'Hoops Intelligence', path: '/hoops' },
-  { id: 'contact', label: 'Contact', path: '/contact' }
-]
+// Main app layout with router
 </script>
+
+<style>
+/* Global styles can go here */
+</style>
 
 <style lang="css" scoped>
 /* Navigation Styles */
