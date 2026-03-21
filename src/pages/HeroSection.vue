@@ -1,11 +1,11 @@
 <template>
-  <section id="hero" class="min-h-screen relative flex items-center justify-center overflow-hidden bg-white text-[#1A1A1A]">
+  <section id="hero" class="min-h-screen relative flex items-center justify-center overflow-hidden bg-white text-[#1A1A1A] site-animate">
     
     <div class="rain-wrapper absolute inset-0 z-0 opacity-[0.15]">
       <div class="rain-container"></div>
     </div>
 
-    <div class="container mx-auto px-6 py-20 relative z-10 flex flex-col items-center text-center">
+    <div class="container mx-auto px-6 py-20 relative z-10 flex flex-col items-center text-center site-animate site-animate-delay-200">
       
       <div class="reveal reveal-up flex items-center justify-center gap-4 mb-8">
         <span class="h-[1px] w-12 bg-[#C9A84C] origin-left scale-x-animation"></span>
@@ -15,7 +15,7 @@
         <span class="h-[1px] w-12 bg-[#C9A84C] origin-right scale-x-animation"></span>
       </div>
 
-      <h1 class="reveal reveal-up font-playfair text-[clamp(2.5rem,8vw,5.5rem)] font-black leading-[1.1] tracking-tight text-[#1A1A1A]" style="transition-delay: 0.1s">
+      <h1 class="reveal reveal-up font-playfair text-[clamp(2.5rem,8vw,5.5rem)] font-black leading-[1.1] tracking-tight text-[#1A1A1A] site-animate site-animate-delay-300" style="transition-delay: 0.1s">
         Every brand has a <br />
         <span class="italic text-[#C9A84C] relative inline-block">
           story
@@ -30,7 +30,7 @@
         We apply the high-stakes discipline of <span class="font-semibold text-[#1A1A1A]">Sports PR</span> to global leaders and creators to craft narratives that move the world.
       </p>
 
-      <div class="reveal reveal-up flex flex-wrap justify-center gap-6 mt-12" style="transition-delay: 0.3s">
+      <div class="reveal reveal-up flex flex-wrap justify-center gap-6 mt-12 site-animate site-animate-delay-500" style="transition-delay: 0.3s">
         <a href="/contact" class="group relative px-10 py-5 bg-[#1A1A1A] text-white overflow-hidden rounded-full transition-all duration-500 hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)]">
           <span class="relative z-10 uppercase text-xs tracking-widest font-bold">Start Your Narrative</span>
           <div class="absolute inset-0 bg-[#C9A84C] translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
@@ -64,6 +64,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+
+.font-playfair { font-family: 'Playfair Display', serif; }
+
 .rain-wrapper {
   mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
 }
