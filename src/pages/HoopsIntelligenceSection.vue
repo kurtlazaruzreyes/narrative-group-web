@@ -15,7 +15,7 @@
         </div>
         
         <div class="flex flex-wrap items-center gap-8 border-t border-black/10 pt-10 reveal-up delay-300">
-          <p class="text-[11px] text-muted max-w-2xl uppercase tracking-[0.25em] leading-relaxed opacity-70">
+          <p class="text-[11px] text-[#666666] max-w-2xl uppercase tracking-[0.25em] leading-relaxed opacity-70">
             Welcome to Hoops Intelligence, where we transform raw data into on-court triumph. We treat basketball as a high-stakes corporate environment, managing every possession as a critical transaction.
           </p>
           <div class="h-[1px] flex-grow bg-gradient-to-r from-black/20 to-transparent"></div>
@@ -30,14 +30,14 @@
     <section id="narrative" class="py-28 max-w-7xl mx-auto px-8">
       <div class="grid lg:grid-cols-2 gap-20 items-center reveal">
         <div class="relative order-2 lg:order-1">
-          <div class="big-num" style="font-size:15rem;top:-3rem;left:-1rem">02</div>
+          <div class="big-num" style="font-size:15rem;top:-3rem;left:-1rem">01</div>
           <div class="slabel mb-6">Elevating your narrative:</div>
           <h2 class="headline mb-6" style="font-size:clamp(2.6rem,4.5vw,4.8rem)">
             For teams and elite prospects<br>
-            <span class="headline-it gold-text">Narrative</span>
+            <span class="headline-it text-[#C9A84C]">Narrative</span>
           </h2>
-          <div class="rule-gold w-12 mb-8"></div>
-          <p class="font-sans font-light text-ink-mid leading-loose mb-8" style="font-size:0.85rem;line-height:1.95">
+          <div class="rule-[#C9A84C] w-12 mb-8"></div>
+          <p class="font-sans font-light text-[#1C1C1C]-mid leading-loose mb-8" style="font-size:1.05rem;line-height:1.95">
             We empower "undervalued" teams and rising players to control their public story. From "Calculated" Programs seeking Efficiency Governance to "Portal-Era" teams battling "Identity Drift," we install a consistent Tactical OS so new players plug into a winning narrative immediately. Elite prospects transition from "high-volume scorer" to "High-IQ Winner," demonstrating cerebral game understanding to professional scouts. We shift the narrative from "chaotic" to "strategic mastery," ensuring that when a team executes a "Closing Protocol" perfectly, the media story shifts from luck to Governance, building a "Pro-Model" Brand of Excellence.          </p>
         </div>
         <div class="img-frame order-1 lg:order-2" style="height:540px">
@@ -56,13 +56,13 @@
           <img src="/unlocking.webp" alt="Teams and elite prospects"/>
         </div>
         <div class="relative">
-          <div class="big-num" style="font-size:15rem;top:-3rem;right:-1rem">01</div>
+          <div class="big-num" style="font-size:15rem;top:-3rem;right:-1rem">02</div>
           <h2 class="headline mb-6" style="font-size:clamp(2.6rem,4.5vw,4.8rem)">
             Unlocking unparalleled <br>
-            <span class="headline-it gold-text">tactical advantage</span>
+            <span class="headline-it text-[#C9A84C]">tactical advantage</span>
           </h2>
-          <div class="rule-gold w-12 mb-8"></div>
-          <p class="font-sans font-light text-ink-mid leading-loose mb-8" style="font-size:0.85rem;line-height:1.95">
+          <div class="rule-[#C9A84C] w-12 mb-8"></div>
+          <p class="font-sans font-light text-[#1C1C1C]-mid leading-loose mb-8" style="font-size:1.05rem;line-height:1.95">
             Athletes utilizing Hoops Intelligence gain access to a "Fractional Front Office"—a level of strategic auditing typically reserved for NBA franchises. Beyond standard scouting, we define *why* outcomes occur. Our Archetype Calibration identifies your "Pseudo-Position" and Tactical Gravity, translating your specific skills into professional efficiency models, allowing you to speak the language of NBA scouts. "Structural Fragility" Opponent Briefs reveal psychological and tactical breaking points, uncovering "Lag Triggers"—specific offensive actions where their defensive processing slows. Our "Momentum Script" Library provides situational protocols, including Mental Governance Scripts designed to neutralize hostile road environments and provide real-time feedback on your "Clutch Compliance."
           </p>
         </div>
@@ -77,23 +77,14 @@
       <div class="grid lg:grid-cols-2 gap-20 items-center reveal">
         <div class="relative order-2 lg:order-1">
           <div class="big-num" style="font-size:15rem;top:-3rem;left:-1rem">03</div>
-          <div class="slabel mb-6">Take Action</div>
           <h2 class="headline mb-6" style="font-size:clamp(2.6rem,4.5vw,4.8rem)">
             Your Next Play:<br>
-            <span class="headline-it gold-text">Request a Narrative Audit</span>
+            <span class="headline-it text-[#C9A84C]">Request a Narrative Audit</span>
           </h2>
-          <div class="rule-gold w-12 mb-8"></div>
-          <p class="font-sans font-light text-ink-mid leading-loose mb-8" style="font-size:0.85rem;line-height:1.95">
-            Don't just contact us—experience our "Proof of Utility." Request a "Narrative Audit" and provide us with your next opponent or last three game films. We'll deliver a 1-page Tactical Audit, pinpointing your competition's "Structural Fragility" and outlining a "Governance Blueprint" for victory. See how our Hoops Intelligence formula solves your specific challenges. For immediate value, download "The First 4 / Final 4 Protocol: Governing the Critical Windows of the Game," providing high-value tools you can take to practice tomorrow. Explore how we apply these same Governance principles to <span class="text-gold">Fractional HR & Strategic Governance</span>.
+          <div class="rule-[#C9A84C] w-12 mb-8"></div>
+          <p class="font-sans font-light text-[#1C1C1C]-mid leading-loose mb-8" style="font-size:1.05rem;line-height:1.95">
+            Don't just contact us—experience our "Proof of Utility." Request a "Narrative Audit" and provide us with your next opponent or last three game films. We'll deliver a 1-page Tactical Audit, pinpointing your competition's "Structural Fragility" and outlining a "Governance Blueprint" for victory. See how our Hoops Intelligence formula solves your specific challenges. For immediate value, download "The First 4 / Final 4 Protocol: Governing the Critical Windows of the Game," providing high-value tools you can take to practice tomorrow. Explore how we apply these same Governance principles to <span class="text-[#C9A84C]">Fractional HR & Strategic Governance</span>.
           </p>
-          <div class="mt-8 space-y-4">
-            <a href="mailto:contact@narrativegroup.org" class="inline-flex items-center gap-3 bg-[#C9A96E] text-white px-8 py-4 font-playfair text-xs tracking-widest uppercase hover:bg-[#B8963E] transition-all duration-300">
-              Request a narrative audit
-              <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-              </svg>
-            </a>
-          </div>
         </div>
         <div class="img-frame order-1 lg:order-2" style="height:540px">
           <img src="/yourNextPlay.webp" alt="Request narrative audit"/>
@@ -428,10 +419,10 @@ onMounted(() => {
   align-items: center;
   gap: 1.5rem;
   padding: 1.75rem 2rem;
-  background: var(--off);
+  background: transparent;
 }
 .orn.cream {
-  background: var(--white);
+  background: transparent;
 }
 .orn span:first-child,
 .orn span:last-child {

@@ -18,7 +18,7 @@
           </div>
           
           <div class="flex flex-wrap items-center gap-4 md:gap-8 border-t border-black/10 pt-6 md:pt-10 reveal-up delay-300">
-            <p class="text-[10px] md:text-[11px] text-muted max-w-xs md:max-w-sm uppercase tracking-[0.25em] leading-relaxed opacity-70">
+            <p class="text-[10px] md:text-[11px] text-[#666666] max-w-xs md:max-w-sm uppercase tracking-[0.25em] leading-relaxed opacity-70">
               Strategic Storytelling for those <br class="hidden md:block"/>shaping the global conversation.
             </p>
             <div class="h-[1px] flex-grow bg-gradient-to-r from-black/20 to-transparent"></div>
@@ -26,15 +26,19 @@
         </div>
       </header>
 
+      <div class="orn">
+        <span></span><span class="dia">◆</span><span></span>
+      </div>
+
       <section class="py-16 md:py-24 lg:py-40 bg-[#F9F7F2] text-[#1A1A1A] px-4 md:px-6">
         <div class="max-w-7xl mx-auto">
           <div class="mb-16 md:mb-24 reveal-up">
             <h2 class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 md:mb-6 font-playfair text-center md:text-left">Who we <span class="italic text-[#C9A96E]">Partner With</span></h2>
-            <p class="text-[#C9A96E]/60 uppercase tracking-[0.4em] text-[10px] text-center md:text-left">High-Stakes Architecture</p>
+            <p class="text-[#C9A96E]/60 uppercase tracking-[0.4em] text-[13px] text-center md:text-left">High-Stakes Architecture</p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-black/5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div v-for="partner in partners" :key="partner.role" 
-                 class="bg-white p-6 md:p-8 lg:p-12 hover:bg-[#C9A96E] transition-all duration-700 cursor-default group">
+                 class="bg-[#FFF2D7] rounded-lg p-6 md:p-8 lg:p-12 hover:bg-[#C9A96E] transition-all duration-700 cursor-default group">
               <span class="text-3xl md:text-4xl mb-6 md:mb-10 block filter grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:-translate-y-2">
                 {{ partner.icon }}
               </span>
@@ -47,18 +51,24 @@
         </div>
       </section>
 
+      <div class="orn">
+        <span></span><span class="dia">◆</span><span></span>
+      </div>
+
       <section class="py-16 md:py-24 lg:py-32 px-4 md:px-6 max-w-7xl mx-auto border-t border-black/5">
         <div class="grid lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
           
           <div class="lg:col-span-4 lg:sticky lg:top-32 h-fit reveal-up">
-            <h3 class="text-lg md:text-xl mb-6 md:mb-10 italic text-[#C9A96E] font-playfair">Measuring Success: Tangible Results</h3>
+            <h3 class="text-lg font-extrabold md:text-4xl mb-6 md:mb-10 italic text-[#C9A96E] font-playfair">
+              <span class="text-[#666666]">Measuring Success:</span> Tangible Results
+            </h3>
             <ul class="space-y-4 md:space-y-6">
               <li v-for="(pillar, i) in pillars" :key="i" 
                   @click="scrollTo(i)"
                   class="flex items-start gap-3 md:gap-4 cursor-pointer group transition-all duration-500">
                 <div class="w-2 h-2 mt-1.5 transition-all duration-500"
                      :class="activePillar === i ? 'bg-[#C9A96E] scale-125 rotate-45' : 'bg-black/10 group-hover:bg-[#C9A96E]/40'"></div>
-                <span :class="activePillar === i ? 'text-[#C9A96E] translate-x-2' : 'text-muted'" 
+                <span :class="activePillar === i ? 'text-[#C9A96E] translate-x-2' : 'text-[#666666]'" 
                       class="text-sm md:text-base font-light leading-relaxed transition-all duration-500">
                   {{ pillar.title }}
                 </span>
@@ -78,14 +88,14 @@
                 </h2>
               </div>
 
-              <p class="text-muted text-lg md:text-xl leading-relaxed mb-6 md:mb-8 font-light max-w-2xl">
+              <p class="text-[#666666] text-lg md:text-xl leading-relaxed mb-6 md:mb-8 font-light max-w-2xl">
                 {{ pillar.longDesc }}
               </p>
 
               <ul v-if="pillar.bullets" class="space-y-3 md:space-y-4 mb-12 md:mb-16 max-w-2xl">
                 <li v-for="(bullet, index) in pillar.bullets" :key="index" class="flex items-start gap-2 md:gap-3">
                   <div class="w-1.5 h-1.5 bg-[#C9A96E] rounded-full mt-2 flex-shrink-0"></div>
-                  <span class="text-muted text-base md:text-lg leading-relaxed font-light">{{ bullet }}</span>
+                  <span class="text-[#666666] text-base md:text-lg leading-relaxed font-light">{{ bullet }}</span>
                 </li>
               </ul>
 
@@ -113,7 +123,7 @@
                     
                     <div class="flex flex-wrap justify-between mt-4 md:mt-6 px-2">
                       <div v-for="label in ['Innovative', 'Early Adopters', 'Early Majority', 'Late Majority', 'Latecomers']" 
-                           :key="label" class="text-[8px] md:text-[9px] uppercase tracking-tighter text-muted/60 text-center w-1/5 px-1">
+                           :key="label" class="text-[8px] md:text-[9px] uppercase tracking-tighter text-[#666666]/60 text-center w-1/5 px-1">
                         <div class="break-words">{{ label }}</div>
                       </div>
                     </div>
@@ -220,6 +230,32 @@ onMounted(() => {
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 
 .font-playfair { font-family: 'Playfair Display', serif; }
+
+/* ORNAMENTAL DIVIDER */
+.orn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.75rem 5rem;
+  background: transparent;
+}
+.orn.cream {
+  background: transparent;
+}
+.orn span:first-child,
+.orn span:last-child {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201, 168, 76, 0.28) 50%, #9A7A2E);
+}
+.orn span:last-child {
+  transform: scaleX(-1);
+}
+.dia {
+  color: #C9A96E;
+  font-size: 0.44rem;
+  flex-shrink: 0;
+}
 
 .reveal-up {
   opacity: 0;

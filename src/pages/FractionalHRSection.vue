@@ -15,7 +15,7 @@
         </div>
         
         <div class="flex flex-wrap items-center gap-8 border-t border-black/10 pt-10 reveal-up delay-300">
-          <p class="text-[11px] text-muted max-w-2xl uppercase tracking-[0.25em] leading-relaxed opacity-70">
+          <p class="text-[11px] text-[#666666] max-w-2xl uppercase tracking-[0.25em] leading-relaxed opacity-70">
             Many small-to-mid-sized firms outgrow their operational foundation. You need C-Suite HR and strategic oversight without the full-time cost. The Narrative Group provides fractional expertise to bridge the gap between administrative tasks and executive leadership, ensuring your most valuable assets—your people and your entity structure—are protected and optimized.
           </p>
           <div class="h-[1px] flex-grow bg-gradient-to-r from-black/20 to-transparent"></div>
@@ -31,10 +31,10 @@
     <section class="px-6 md:px-12 py-24 bg-[#F9F7F2]">
       <div class="max-w-7xl mx-auto">
         <div class="mb-24 text-center md:text-left">
-          <p class="font-serif text-sm tracking-[0.3em] uppercase text-gold mb-6 font-semibold">
+          <p class="font-serif text-sm tracking-[0.3em] uppercase text-[#C9A84C] mb-6 font-semibold">
             Client Profiles
           </p>
-          <h2 class="font-serif text-5xl md:text-7xl lg:text-8xl uppercase tracking-tighter leading-none text-ink">
+          <h2 class="font-serif text-5xl md:text-7xl lg:text-8xl uppercase tracking-tighter leading-none text-[#1C1C1C]">
             Who We <br class="hidden md:block" /> Serve
           </h2>
         </div>
@@ -45,23 +45,23 @@
             :key="i"
             class="group flex-1 flex flex-col space-y-8"
           >
-            <div class="relative aspect-square md:aspect-[16/10] overflow-hidden bg-ink">
+            <div class="relative aspect-square md:aspect-[16/10] overflow-hidden bg-[#1C1C1C]">
               <img 
                 :src="profile.image" 
                 :alt="profile.title" 
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" 
               />
               <div class="absolute top-6 left-6">
-                <span class="text-6xl font-serif italic text-gold/80 opacity-50">{{ String(i + 1).padStart(2, '0') }}</span>
+                <span class="text-6xl font-serif italic text-[#C9A84C]/80 opacity-50">{{ String(i + 1).padStart(2, '0') }}</span>
               </div>
             </div>
 
             <div class="max-w-xl">
-              <h3 class="font-serif text-3xl md:text-4xl uppercase tracking-tight text-ink mb-4">
+              <h3 class="font-serif text-3xl md:text-4xl uppercase tracking-tight text-[#1C1C1C] mb-4">
                 {{ profile.title }}
               </h3>
-              <div class="h-1 w-12 bg-gold mb-6 transition-all duration-500 group-hover:w-24"></div>
-              <p class="text-ink/80 text-lg md:text-xl leading-relaxed font-light">
+              <div class="h-1 w-12 bg-[#C9A84C] mb-6 transition-all duration-500 group-hover:w-24"></div>
+              <p class="text-[#1C1C1C]/80 text-lg md:text-xl leading-relaxed font-light">
                 {{ profile.desc }}
               </p>
             </div>
@@ -77,33 +77,33 @@
     <section class="py-24 px-10 bg-[#F9F7F2] max-md:px-6 max-md:py-16 overflow-hidden">
       <div class="reveal-stagger">
         <div class="max-w-4xl mb-16 relative">
-          <div class="absolute -top-10 -left-10 w-40 h-40 border-l border-t border-gold opacity-30"></div>
+          <div class="absolute -top-10 -left-10 w-40 h-40 border-l border-t border-[#C9A84C] opacity-30"></div>
           
-          <div class="text-[0.7rem] tracking-wider uppercase text-gold mb-4 flex items-center gap-3 relative z-10">
-            <span class="block w-6 h-px bg-gold"></span>Compliance & Governance
+          <div class="text-[0.7rem] tracking-wider uppercase text-[#C9A84C] mb-4 flex items-center gap-3 relative z-10">
+            <span class="block w-6 h-px bg-[#C9A84C]"></span>Compliance & Governance
           </div>
-          <h2 class="font-playfair text-[clamp(2rem,3.8vw,3.6rem)] font-extrabold leading-[1.05] tracking-tight text-ink relative z-10">
-            Compliance isn't a task,<br>it's your company's <em class="italic text-gold">bedrock value</em>.
+          <h2 class="font-playfair text-[clamp(2rem,3.8vw,3.6rem)] font-extrabold leading-[1.05] tracking-tight text-[#1C1C1C] relative z-10">
+            Compliance isn't a task,<br>it's your company's <em class="italic text-[#C9A84C]">bedrock value</em>.
           </h2>
-          <p class="mt-6 text-muted-dark leading-relaxed font-normal max-w-3xl relative z-10">
+          <p class="mt-6 text-[#555555] leading-relaxed font-normal max-w-3xl relative z-10">
             Many businesses manage with software; elite businesses govern with a strategist. We take the "governance burden" off of principal's desk so they can return to being a founder.
           </p>
         </div>
 
         <div class="grid grid-cols-2 gap-6 max-md:grid-cols-1">
 
-          <div class="reveal-card group relative bg-cream border border-gold/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-gold hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-2 rounded-xl">
-            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-gold/5 leading-none transition-all duration-500 group-hover:text-gold/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
+          <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl">
+            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-[#C9A84C]/5 leading-none transition-all duration-500 group-hover:text-[#C9A84C]/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
               01
             </div>
             
             <div class="relative z-10">
-              <div class="w-16 h-16 rounded-full border border-gold flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-ink group-hover:border-ink">
-                <svg class="w-7 h-7 stroke-gold group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div class="w-16 h-16 rounded-full border border-[#C9A84C] flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#1C1C1C] group-hover:border-[#1C1C1C]">
+                <svg class="w-7 h-7 stroke-[#C9A84C] group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               </div>
               
-              <h3 class="font-playfair text-[1.7rem] mb-4 text-ink font-semibold">Professional Governance</h3>
-              <p class="text-[0.95rem] text-muted-dark leading-relaxed font-normal mb-8 transition-colors duration-300">
+              <h3 class="font-playfair text-[1.7rem] mb-4 text-[#1C1C1C] font-semibold">Professional Governance</h3>
+              <p class="text-[0.95rem] text-[#555555] leading-relaxed font-normal mb-8 transition-colors duration-300">
                 Our strategic oversight ensures your business operates with the same level of professionalism as your craft, protecting your assets and ensuring peace of mind.
               </p>
             </div>
@@ -114,19 +114,19 @@
               </div>
             </div>
             
-            <div class="absolute inset-0 bg-gold/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+            <div class="absolute inset-0 bg-[#C9A84C]/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
           </div>
 
-          <div class="reveal-card group relative bg-cream border border-gold/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-gold hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-2 rounded-xl" style="transition-delay: .1s">
-            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-gold/5 leading-none transition-all duration-500 group-hover:text-gold/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
+          <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl" style="transition-delay: .1s">
+            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-[#C9A84C]/5 leading-none transition-all duration-500 group-hover:text-[#C9A84C]/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
               02
             </div>
             <div class="relative z-10">
-              <div class="w-16 h-16 rounded-full border border-gold flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-ink group-hover:border-ink">
-                <svg class="w-7 h-7 stroke-gold group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <div class="w-16 h-16 rounded-full border border-[#C9A84C] flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#1C1C1C] group-hover:border-[#1C1C1C]">
+                <svg class="w-7 h-7 stroke-[#C9A84C] group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               </div>
-              <h3 class="font-playfair text-[1.7rem] mb-4 text-ink font-semibold">Executive-Level Strategy</h3>
-              <p class="text-[0.95rem] text-muted-dark leading-relaxed font-normal mb-8 transition-colors duration-300">
+              <h3 class="font-playfair text-[1.7rem] mb-4 text-[#1C1C1C] font-semibold">Executive-Level Strategy</h3>
+              <p class="text-[0.95rem] text-[#555555] leading-relaxed font-normal mb-8 transition-colors duration-300">
                 We provide strategic thinking and oversight that software alone cannot deliver, ensuring your business stays ahead of regulatory changes and compliance requirements.
               </p>
             </div>
@@ -136,7 +136,7 @@
               </div>
             </div>
 
-            <div class="absolute inset-0 bg-gold/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+            <div class="absolute inset-0 bg-[#C9A84C]/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
           </div>
 
         </div>
@@ -429,10 +429,10 @@ onMounted(() => {
   align-items: center;
   gap: 1.5rem;
   padding: 1.75rem 2rem;
-  background: var(--off);
+  background: transparent;
 }
 .orn.cream {
-  background: var(--white);
+  background: transparent;
 }
 .orn span:first-child,
 .orn span:last-child {

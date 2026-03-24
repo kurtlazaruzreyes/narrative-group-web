@@ -17,7 +17,7 @@
         </div>
         
         <div class="flex flex-wrap items-center gap-8 border-t border-black/10 pt-10 reveal-up delay-300">
-          <p class="text-[11px] text-muted max-w-2xl uppercase tracking-[0.25em] leading-relaxed opacity-70">
+          <p class="text-[11px] text-[#666666] max-w-2xl uppercase tracking-[0.25em] leading-relaxed opacity-70">
             Welcome to The Narrative Group, your 'special ops' team for advanced NFL roster strategy. We transform guesswork into quantifiable advantage, providing front offices, owners, and coaching staffs with cutting-edge intelligence needed to dominate the field and the balance sheet. Discover how our quantitative approach redefines success.
           </p>
           <div class="h-[1px] flex-grow bg-gradient-to-r from-black/20 to-transparent"></div>
@@ -29,11 +29,11 @@
       <span></span><span class="dia">◆</span><span></span>
     </div>
 
-          <section class="py-32 px-6 max-w-7xl mx-auto border-t border-black/5">
+    <section class="py-32 px-6 max-w-7xl mx-auto border-t border-black/5">
       <div class="grid lg:grid-cols-12 gap-16">
         
         <div class="lg:col-span-4 lg:sticky lg:top-40 h-fit reveal-up">
-          <h3 class="text-xl mb-10 italic text-[#C9A96E] font-playfair">Four Distinct Products</h3>
+          <h3 class="text-3xl font-extrabold mb-10 italic text-[#C9A96E] font-playfair">Four Distinct Products</h3>
           <ul class="space-y-6">
             <li v-for="(item, i) in navItems" :key="item.id" 
                 @click="scrollToSection(item.id)"
@@ -112,7 +112,7 @@
               </h2>
             </div>
 
-            <p class="text-muted text-xl leading-relaxed mb-8 font-light max-w-2xl">
+            <p class="text-[#666666] text-xl leading-relaxed mb-8 font-light max-w-2xl">
               Four frameworks to eliminate wasted draft capital from your front office strategy.
             </p>
 
@@ -195,7 +195,7 @@
               </h2>
             </div>
 
-            <p class="text-muted text-xl leading-relaxed mb-8 font-light max-w-2xl">
+            <p class="text-[#666666] text-xl leading-relaxed mb-8 font-light max-w-2xl">
               Four frameworks protecting every dollar committed in free agency.
             </p>
 
@@ -242,7 +242,7 @@
               </h2>
             </div>
 
-            <p class="text-muted text-xl leading-relaxed mb-8 font-light max-w-2xl">
+            <p class="text-[#666666] text-xl leading-relaxed mb-8 font-light max-w-2xl">
               Three frameworks ensuring roster and coaching staff operate in perfect alignment.
             </p>
 
@@ -279,14 +279,6 @@
               </div>
             </div>
 
-            <div class="mt-16 text-center">
-              <button @click="$emit('navigate', 'home')" class="btn-primary">
-                Request a sample intelligence brief
-                <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -302,55 +294,55 @@
     <section class="py-24 px-10 bg-warm-white max-md:px-6 max-md:py-16 overflow-hidden" id="mission-section">
       <div class="reveal-stagger">
         <div class="max-w-4xl mb-16 relative">
-          <div class="absolute -top-10 -left-10 w-40 h-40 border-l border-t border-gold opacity-30"></div>
+          <div class="absolute -top-10 -left-10 w-40 h-40 border-l border-t border-[#C9A84C] opacity-30"></div>
           
-          <div class="text-[0.7rem] tracking-wider uppercase text-gold mb-4 flex items-center gap-3 relative z-10">
-            <span class="block w-6 h-px bg-gold"></span>Our Mission
+          <div class="text-[0.7rem] tracking-wider uppercase text-[#C9A84C] mb-4 flex items-center gap-3 relative z-10">
+            <span class="block w-6 h-px bg-[#C9A84C]"></span>Our Mission
           </div>
-          <h2 class="font-playfair text-[clamp(2rem,3.8vw,3.6rem)] font-extrabold leading-[1.05] tracking-tight text-ink relative z-10">
-            Redefining success through<br><em class="italic text-gold">data</em>.
+          <h2 class="font-playfair text-[clamp(2rem,3.8vw,3.6rem)] font-extrabold leading-[1.05] tracking-tight text-[#1C1C1C] relative z-10">
+            Redefining success through<br><em class="italic text-[#C9A84C]">data</em>.
           </h2>
-          <p class="mt-6 text-muted-dark leading-relaxed font-normal max-w-3xl relative z-10">
+          <p class="mt-6 text-[#555555] leading-relaxed font-normal max-w-3xl relative z-10">
             In the high-stakes world of the NFL, every decision counts. The Narrative Group provides analytical depth and strategic foresight to turn potential into performance, ensuring your investments yield maximum returns. Let us empower your team with unmatched football intelligence.
           </p>
         </div>
 
         <div class="grid grid-cols-2 gap-6 max-md:grid-cols-1">
 
-          <div class="reveal-card group relative bg-cream border border-gold/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-gold hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-2 rounded-xl">
-            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-gold/5 leading-none transition-all duration-500 group-hover:text-gold/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
+          <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl">
+            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-[#C9A84C]/5 leading-none transition-all duration-500 group-hover:text-[#C9A84C]/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
               01
             </div>
             
             <div class="relative z-10">
-              <div class="w-16 h-16 rounded-full border border-gold flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-ink group-hover:border-ink">
-                <svg class="w-7 h-7 stroke-gold group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              <div class="w-16 h-16 rounded-full border border-[#C9A84C] flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#1C1C1C] group-hover:border-[#1C1C1C]">
+                <svg class="w-7 h-7 stroke-[#C9A84C] group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
               </div>
               
-              <h3 class="font-playfair text-[1.7rem] mb-4 text-ink font-semibold">Unlocking strategic advantage</h3>
-              <p class="text-[0.95rem] text-muted-dark leading-relaxed font-normal mb-8 transition-colors duration-300">
+              <h3 class="font-playfair text-[1.7rem] mb-4 text-[#1C1C1C] font-semibold">Unlocking strategic advantage</h3>
+              <p class="text-[0.95rem] text-[#555555] leading-relaxed font-normal mb-8 transition-colors duration-300">
                 For NFL General Managers and Front Office Executives, our quantitative strategies move beyond traditional scouting. We leverage Scarcity Modeling to identify undervalued assets and optimal trading opportunities, transforming your draft strategy from a gamble to a calculated portfolio investment. Reduce the "bust factor" and build a sustainable winning roster.
               </p>
             </div>
 
-            <div class="absolute inset-0 bg-gold/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+            <div class="absolute inset-0 bg-[#C9A84C]/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
           </div>
 
-          <div class="reveal-card group relative bg-cream border border-gold/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-gold hover:shadow-2xl hover:shadow-gold/10 hover:-translate-y-2 rounded-xl" style="transition-delay: .1s">
-            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-gold/5 leading-none transition-all duration-500 group-hover:text-gold/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
+          <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl" style="transition-delay: .1s">
+            <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-[#C9A84C]/5 leading-none transition-all duration-500 group-hover:text-[#C9A84C]/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
               02
             </div>
             <div class="relative z-10">
-              <div class="w-16 h-16 rounded-full border border-gold flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-ink group-hover:border-ink">
-                <svg class="w-7 h-7 stroke-gold group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <div class="w-16 h-16 rounded-full border border-[#C9A84C] flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#1C1C1C] group-hover:border-[#1C1C1C]">
+                <svg class="w-7 h-7 stroke-[#C9A84C] group-hover:stroke-white fill-none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
               </div>
-              <h3 class="font-playfair text-[1.7rem] mb-4 text-ink font-semibold">Optimizing your investment & team synergy</h3>
-              <p class="text-[0.95rem] text-muted-dark leading-relaxed font-normal mb-8 transition-colors duration-300">
+              <h3 class="font-playfair text-[1.7rem] mb-4 text-[#1C1C1C] font-semibold">Optimizing your investment & team synergy</h3>
+              <p class="text-[0.95rem] text-[#555555] leading-relaxed font-normal mb-8 transition-colors duration-300">
                 For NFL Owners and Head Coaches, our insights ensure every dollar and every player contributes maximally. Our Behavioral Performance Baseline (BPB) protects against low ROI on guaranteed contracts, while Structural Synergy Analysis (SSA) guarantees system compatibility, ensuring your talented roster performs as a cohesive, dominant unit. This is about building a legacy, not just a team.
               </p>
             </div>
             
-            <div class="absolute inset-0 bg-gold/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+            <div class="absolute inset-0 bg-[#C9A84C]/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
           </div>
 
         </div>
@@ -697,10 +689,10 @@ header {
   align-items: center;
   gap: 1.5rem;
   padding: 1.75rem 5rem;
-  background: #FAFAF8;
+  background: transparent;
 }
 .orn.cream {
-  background: #F9F7F2;
+  background: transparent;
 }
 .orn span:first-child,
 .orn span:last-child {
