@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global site opening animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -18,9 +17,86 @@
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* Staggered animation delays */
 .site-animate-delay-100 { animation-delay: 0.1s; }
 .site-animate-delay-200 { animation-delay: 0.2s; }
 .site-animate-delay-300 { animation-delay: 0.3s; }
 .site-animate-delay-400 { animation-delay: 0.4s; }
 .site-animate-delay-500 { animation-delay: 0.5s; }
+
+@media screen and (width: 1200px) and (height: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+  
+  .min-h-\[90vh\] {
+    min-height: 60vh;
+  }
+  
+  .pt-20 {
+    padding-top: 7rem;
+  }
+  
+  .contact-page-spacing {
+    padding-top: 20vh;
+  }
+  
+  header {
+    min-height: 60vh;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .homepage-title {
+    font-size: 4.5rem !important;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+  
+  .px-10.py-5 {
+    font-size: 0.7rem !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+  
+  .text-lg,
+  .text-xl {
+    font-size: 0.8rem !important;
+  }
+  
+  .uppercase.tracking-widest {
+    font-size: 0.65rem !important;
+  }
+  
+  nav {
+    height: 4rem !important;
+    min-height: 4rem !important;
+    max-height: 4rem !important;
+    overflow: hidden;
+  }
+  
+  nav .flex,
+  nav .items-center {
+    height: 100%;
+    align-items: center;
+  }
+  
+  nav span,
+  nav a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  
+  .pb-20 {
+    padding-bottom: 2rem;
+  }
+  
+  .px-6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

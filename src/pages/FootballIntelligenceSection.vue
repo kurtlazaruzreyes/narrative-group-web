@@ -10,7 +10,7 @@
            <span class="inline-block py-1 px-4 border border-[#C9A96E]/30 rounded-full text-[10px] uppercase tracking-[0.3em] mb-8 text-[#C9A96E] font-bold">
              Football Intelligence
            </span>
-           <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl font-black leading-[0.9] max-w-4xl mb-12 tracking-tighter">
+           <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl font-black leading-[0.9] max-w-5xl mb-12 tracking-tighter">
             Beyond the <br/>
             <span class="text-[#C9A96E] italic hover:tracking-normal transition-all duration-700 cursor-default">Strategic football intelligence</span>
           </h1>
