@@ -35,7 +35,7 @@
             Client Profiles
           </p>
           <h2 class="font-serif text-5xl md:text-7xl lg:text-8xl uppercase tracking-tighter leading-none text-[#1C1C1C]">
-            Who We <br class="hidden md:block" /> Serve
+            Who We Serve
           </h2>
         </div>
 

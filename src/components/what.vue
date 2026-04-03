@@ -17,7 +17,7 @@
 
       <div class="grid grid-cols-3 gap-6 max-md:grid-cols-1">
 
-        <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl">
+        <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl cursor-pointer" @click="handleCardClick" @touchstart="handleTouchStart" @touchend="handleTouchEnd">
           <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-[#C9A84C]/5 leading-none transition-all duration-500 group-hover:text-[#C9A84C]/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
             01
           </div>
@@ -47,7 +47,7 @@
           <div class="absolute inset-0 bg-[#C9A84C]/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
         </div>
 
-        <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl" style="transition-delay: .1s">
+        <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl cursor-pointer" style="transition-delay: .1s" @click="handleCardClick" @touchstart="handleTouchStart" @touchend="handleTouchEnd">
           <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-[#C9A84C]/5 leading-none transition-all duration-500 group-hover:text-[#C9A84C]/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
             02
           </div>
@@ -74,7 +74,7 @@
           <div class="absolute inset-0 bg-[#C9A84C]/[0.03] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
         </div>
 
-        <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl" style="transition-delay: .2s">
+        <div class="reveal-card group relative bg-[#F4F2ED] border border-[#C9A84C]/15 p-10 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:border-[#C9A84C] hover:shadow-2xl hover:shadow-[#C9A84C]/10 hover:-translate-y-2 rounded-xl cursor-pointer" style="transition-delay: .2s" @click="handleCardClick" @touchstart="handleTouchStart" @touchend="handleTouchEnd">
           <div class="absolute -top-2 -right-2 font-playfair text-[9rem] font-black text-[#C9A84C]/5 leading-none transition-all duration-500 group-hover:text-[#C9A84C]/10 group-hover:-translate-y-4 group-hover:-translate-x-4 pointer-events-none">
             03
           </div>
@@ -139,14 +139,96 @@
   transform: translateY(0) scale(1) !important;
 }
 
+/* Touch device hover states */
+.reveal-card.touch-active,
+.reveal-card.touch-pressed {
+  border-color: #C9A84C !important;
+  box-shadow: 0 20px 25px -5px rgba(201, 168, 76, 0.1), 0 10px 10px -5px rgba(201, 168, 76, 0.04) !important;
+  transform: translateY(-8px) !important;
+}
+
+.reveal-card.touch-active .absolute.-top-2.-right-2,
+.reveal-card.touch-pressed .absolute.-top-2.-right-2 {
+  color: rgba(201, 168, 76, 0.1) !important;
+  transform: translateY(-16px) translateX(-16px) !important;
+}
+
+.reveal-card.touch-active .w-16.h-16,
+.reveal-card.touch-pressed .w-16.h-16 {
+  transform: scale(1.1) !important;
+  background-color: #1C1C1C !important;
+  border-color: #1C1C1C !important;
+}
+
+.reveal-card.touch-active .w-16.h-16 svg,
+.reveal-card.touch-pressed .w-16.h-16 svg {
+  stroke: white !important;
+}
+
+.reveal-card.touch-active .cool-cta-link,
+.reveal-card.touch-pressed .cool-cta-link {
+  color: #1C1C1C !important;
+}
+
+.reveal-card.touch-active .cool-cta-link .w-8.h-8,
+.reveal-card.touch-pressed .cool-cta-link .w-8.h-8 {
+  border-color: #1C1C1C !important;
+}
+
+.reveal-card.touch-active .cool-cta-link .w-8.h-8 svg,
+.reveal-card.touch-pressed .cool-cta-link .w-8.h-8 svg {
+  stroke: #1C1C1C !important;
+  transform: translateX(4px) !important;
+}
+
+.reveal-card.touch-active .absolute.inset-0.opacity-0,
+.reveal-card.touch-pressed .absolute.inset-0.opacity-0 {
+  opacity: 0.1 !important;
+  transform: scale(1) !important;
+}
+
+.reveal-card.touch-active .absolute.inset-0.bg-\[\#C9A84C\]\/\[0\.03\],
+.reveal-card.touch-pressed .absolute.inset-0.bg-\[\#C9A84C\]\/\[0\.03\] {
+  transform: translateY(0) !important;
+}
+
 </style>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const mediaRelationsImage = 'mediaRelations.webp' 
 const storytellingImage = 'storyTelllingStrategy.webp' 
 const digitalBrandingImage = 'digitalBranding.webp' 
+
+const activeCard = ref<string | null>(null)
+
+const handleCardClick = (event: MouseEvent) => {
+  const card = (event.target as HTMLElement).closest('.reveal-card')
+  if (card) {
+    const cardId = (card as HTMLElement).dataset.cardId || 'default'
+    activeCard.value = activeCard.value === cardId ? null : cardId
+    
+    // Toggle hover-like classes
+    card.classList.toggle('touch-active')
+  }
+}
+
+const handleTouchStart = (event: TouchEvent) => {
+  const card = (event.target as HTMLElement).closest('.reveal-card')
+  if (card) {
+    card.classList.add('touch-pressed')
+  }
+}
+
+const handleTouchEnd = (event: TouchEvent) => {
+  const card = (event.target as HTMLElement).closest('.reveal-card')
+  if (card) {
+    setTimeout(() => {
+      card.classList.remove('touch-pressed')
+    }, 150)
+  }
+} 
 
 onMounted(() => {
   const observer = new IntersectionObserver(entries => {
