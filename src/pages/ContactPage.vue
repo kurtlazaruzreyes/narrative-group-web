@@ -2,8 +2,7 @@
   <div class="app-container">
     <Navigation />
 
-    <!-- Contact Section -->
-    <section class="min-h-screen bg-white flex items-center justify-center px-6 py-20 max-md:pt-32 relative overflow-hidden" id="contact">
+    <section class="contact-page-spacing min-h-screen bg-white flex items-center justify-center px-6 py-20 max-md:pt-32 relative overflow-hidden" id="contact">
       
       <div class="rain-wrapper absolute inset-0 z-0 opacity-[0.15]">
         <div class="rain-container"></div>

@@ -15,7 +15,7 @@
         <span class="h-[1px] w-12 bg-[#C9A84C] origin-right scale-x-animation"></span>
       </div>
 
-      <h1 class="reveal reveal-up font-playfair text-[clamp(2.5rem,8vw,5.5rem)] font-black leading-[1.1] tracking-tight text-[#1A1A1A] site-animate site-animate-delay-300" style="transition-delay: 0.1s">
+      <h1 class="homepage-title reveal reveal-up font-playfair text-[clamp(2.5rem,8vw,5.5rem)] font-black leading-[1.1] tracking-tight text-[#1A1A1A] site-animate site-animate-delay-300" style="transition-delay: 0.1s">
         Every brand has a <br />
         <span class="italic text-[#C9A84C] relative inline-block">
           story
